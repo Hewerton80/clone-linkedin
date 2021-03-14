@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Panel from '../../Panel';
+import Panel from '../Panel';
 
 import { Container } from './styles';
 
@@ -15,7 +15,7 @@ const ProfilePanel: React.FC = () => {
           className="profile-picture"
         />
         <h1>Hewerton Adão</h1>
-        <h2>Web developer</h2>
+        <h2>web developer</h2>
 
         <div className="separator"></div>
 

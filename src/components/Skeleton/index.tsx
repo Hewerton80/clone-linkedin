@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export default styled.div`
+const Skeleton = styled.div`
   background-image: linear-gradient(
     -90deg,
     #e7edf1 0%,
@@ -9,7 +9,6 @@ export default styled.div`
   );
   background-size: 400% 400%;
   animation: shimmer 1.2s ease-in-out infinite;
-
   @keyframes shimmer {
     0% {
       background-position: 0% 0%;
@@ -18,8 +17,7 @@ export default styled.div`
       background-position: -135% 0%;
     }
   }
-
   &.white {
     background-image: linear-gradient(-90deg, #fff 0%, #e7edf1 50%, #fff 100%);
-  }
-`;
+  }`;
+export default Skeleton;

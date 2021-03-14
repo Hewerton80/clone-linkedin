@@ -5,7 +5,6 @@ export const Container = styled.div`
     .bg-skeleton {
       width: 100%;
       height: 70px;
-
       filter: brightness(96%);
     }
     span {
@@ -13,7 +12,6 @@ export const Container = styled.div`
       flex-direction: column;
       align-items: center;
       padding-bottom: 175px;
-
       .avatar-skeleton {
         z-index: 1;
         width: 72px;
@@ -21,10 +19,8 @@ export const Container = styled.div`
         border-radius: 50%;
         margin: -36px 0 10px;
       }
-
       .row-skeleton {
         height: 12px;
-
         &:nth-child(2) {
           width: 60%;
         }
