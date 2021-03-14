@@ -4,13 +4,21 @@ import ProfilePanel from './ProfilePanel';
 import HashtagPanel from './HashtagPanel';
 
 import { Container } from './styles';
+import LoadingProfilePanel from '../Shimmer/LoadingProfilePanel';
 
-const LeftColumn: React.FC = () => {
+const LeftColumn: React.FC<LoadingProps> = ({ isLoading }) => {
   return (
     <Container className="left-column">
-      <ProfilePanel />
-      <HashtagPanel />
-    </Container>
+      {isLoading? (
+          <LoadingProfilePanel />
+      ): (
+        <>
+          <ProfilePanel />
+          <HashtagPanel />
+        </>
+      )
+}
+    </Container >
   );
 };
 
